@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fashion Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdfdfd;
+    }
+
+    header {
+      background-color: #2b2727;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 25px;
+    }
+
+    .logo-center {
+      margin: 15px 0;
+    }
+
+    .logo-center img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+    }
+
+    header p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #444;
+      text-align: center;
+      position: relative;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ffb6c1;
+      color: black;
+    }
+
+    
+    .banner {
+  
+  background-image: url("C:\Users\Shweta\Downloads\shoping image.html");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(68, 64, 64);
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(137, 130, 130, 0.5);
+}
+    
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      width: 220px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+  
+        .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffb6c1;
+  color: black;
+}
+      }
+    
+  </style>
+</head>
+<body>
+  <script>
+    function sendToWhatsApp() {
+      var name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+
+      // Replace with your WhatsApp number (use country code, no + or 0)
+      var phoneNumber = "8600313918";
+      
+      var url = "https://wa.me/918600313918?text=" 
+          + encodeURIComponent("Hello, my name is " + name + ". " + message);
+
+
+      window.open(url, '_Self');
+    }
+  </script>
+
+  <header>
+    <h1>Fashion Hub</h1>
+    <div class="logo-center">
+      <img src="m5/f.jpg" alt="Logo">
+    </div>
+    <p>Your One-Stop Shop for Trendy Clothes</p>
+  </header>
+
+  <nav> 
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#offers">Offers</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  </nav>
+
+  <div class="banner" id="home">
+    New Summer Collection!
+  </div>
+
+  <div class="section" id="products">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <!-- Original 3 products -->
+      <div class="product-card" id="ladies">
+        <img src="m5/l1.jfif" alt="Shirt" />
+        <h3>Casual Shirt</h3>
+        <p>₹799</p>
+      </div>
+      <div class="product-card" id="ladies">
+        <img src="m5/megha2.webp" alt="Dress" />
+        <h3>Summer Dress</h3>
+        <p>₹1,299</p>
+      </div>
+      <div class="product-card" id="ladies">
+        <img src="m5/l3.jfif" alt="Jacket" />
+        <h3>Denim Jacket</h3>
+        <p>₹1,999</p>
+      </div>
+
+      <!-- 3 New products -->
+      <div class="product-card" id="ladies">
+        <img src="m5/l4.jpeg" alt="T-Shirt" />
+        <h3>Printed T-Shirt</h3>
+        <p>₹499</p>
+      </div>
+      <div class="product-card" id="ladies">
+        <img src="m5/l6.jfif" alt="long dress" />
+        <h3>long dress</h3>
+        <p>₹1,199</p>
+      </div>
+      <div class="product-card" id="Gents">
+        <img src="m5/m1.jpg" alt="shirt" />
+        <h3>shirt</h3>
+        <p>₹899</p>
+      </div>
+      <div class="product-card" id="Gents">
+        <img src="m5/m2.jfif" alt="shirt" />
+        <h3>cotton shirts</h3>
+        <p>₹899</p>
+      </div>
+      <div class="product-card" id="Gents">
+        <img src="m5/m3.jfif" alt="shirt" />
+        <h3>plane shirts</h3>
+        <p>₹899</p>
+      </div>
+      <div class="product-card" id="Gents">
+        <img src="m5/m4.jfif" alt="shirt" />
+        <h3>t T-Shirt</h3>
+        <p>₹899</p>
+      </div>
+      <div class="product-card" id="Gents">
+        <img src= "m5/i2.jfif" alt="Shirt" />
+        <h3>shirt</h3>
+        <p>₹899</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="section" id="offers">
+    <h2>Exciting Offers</h2>
+    <p>🔥 Get up to <strong>50% off</strong> on select items! Limited Time Only.</p>
+  </div>
+
+  <div class="section" id="about">
+    
+  <h2>About Us</h2>
+  <p><strong>Fashion Hub</strong> is more than just a clothing store — it's a celebration of style,<br></br> comfort, and individuality. Founded with the vision of making fashion accessible to everyone, we offer trendy, high-quality apparel for men, women, and kids at affordable prices.</p>
+  <p>Whether you're looking for a casual everyday outfit, a statement piece for a special occasion,<br></br> or adorable wear for your little ones, we’ve got you covered. Our collections are carefully curated to keep up with the latest trends while ensuring comfort and durability.</p>
+  <p>At Fashion Hub, customer satisfaction is our top priority. We believe fashion should be fun, <br></br>empowering, and inclusive — and we’re here to help you look and feel your best every day.</p>
+  <p>Join us on this fashionable journey — where style meets soul.</p>
+</div>
+  
+
+   <div class="section" id="contact">
+    <h2>Contact Us</h2><br></br>
+    <div class="contact-form">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" required><br></br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required><br></br>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea><br></br>
+
+    
+
+    
+    
+        <button type="button" class="btn"onclick= "sendToWhatsApp()">Send Message</button><br></br>
+      </form>
+    </div>
+    </div>
+    <p style="margin-top: 30px;">Or reach us;
+    <p>Email: contact@fashionhub.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </div>
+  <footer>
+    &copy; 2025 Fashion Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>
